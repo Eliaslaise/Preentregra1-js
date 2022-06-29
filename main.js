@@ -167,7 +167,7 @@ const db = {
       });
     });
   
-    document.querySelectorAll(".removeOne").forEach((button) => {
+      document.querySelectorAll(".removeOne").forEach((button) => {
       button.addEventListener("click", (e) => {
         const id = parseInt(button.getAttribute("data-id"));
         shoppingCart.methods.remove(id, 1);
@@ -175,7 +175,7 @@ const db = {
       });
     });
   
-    document.querySelector("#bClose").addEventListener("click", (e) => {
+      document.querySelector("#bClose").addEventListener("click", (e) => {
       document.querySelector("#shopping-cart-container").classList.remove("show");
       document.querySelector("#shopping-cart-container").classList.add("hide");
     });
